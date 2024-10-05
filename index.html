@@ -1,0 +1,675 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>প্রথম আলো | বাংলা নিউজ পেপার</title>
+  <link rel="shortcut icon" type="image/png" href="img/logo.png"> 
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+   
+  <style>
+    /* Custom font */
+    @font-face {
+        font-family: Solaiman;
+        src: url('font/SolaimanLipi.ttf') format('truetype');
+    }
+    
+    body {
+        font-family: Solaiman;
+    }
+    
+    /* Global styles */
+    * {
+        box-sizing: border-box;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    /* Container styles */
+    .container {
+        width: 100%;
+    }
+    
+    /* Context styles */
+    .context {
+        display: flex;
+        width: 1250px;
+        margin: 0 auto;
+    }
+    
+    /* Header styles */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        height: 100px;
+    }
+    
+    .hm-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 25px;
+        width: 30px;
+        margin-right: 30px;
+        padding: 4px;
+    }
+    
+    .hm-icon:hover {
+        cursor: pointer;
+        background-color: rgb(230, 230, 230);
+    }
+    
+    .hm-icon .hm-bar {
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    
+    .top-icons {
+        display: flex;
+    }
+    
+    .left-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .news-date {}
+    
+    .right-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .right-icon {
+        display: flex;
+    }
+    
+    .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        width: 80px;
+        border: 1px solid lightgray;
+        font-weight: bolder;
+        margin-left: 30px;
+        color: rgb(57, 70, 212);
+        border-radius: 4px;
+    }
+    
+    .login:hover {
+        cursor: pointer;
+        background-color: rgb(247, 247, 247);
+    }
+    
+    /* Main menu styles */
+    .main-menu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-menu li a {
+        padding: 0 15px;
+        text-decoration: none;
+        font-family: solaimanlipi;
+        color: rgb(28, 28, 28);
+        font-weight: bold;
+    }
+    
+    /* Border styles */
+    .border {
+        border: 1px solid lightgray;
+        padding: 10px;
+    }
+    
+    .border2 {
+        border-top: 4px solid grey;
+        border-bottom: 1px solid rgb(199, 201, 204);
+        padding: 0px;
+    }
+    
+    /* Column styles */
+    .col31 {
+        width: 75%;
+    }
+    
+    .col31 .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .col31 .row .col {}
+    
+    .col31 .row1 .col {
+        display: flex;
+    }
+    
+    .col32 {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    /* Box history styles */
+    .box-history {
+        min-height: 100px;
+        width: 100%;
+        align-items: center;
+    }
+    
+    /* Centering styles */
+    .v-center {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .h-center {
+        display: flex;
+        align-items: center;
+    }
+    
+    /* Float styles */
+    .lf {
+        float: left;
+    }
+    
+    .rf {
+        float: right;
+    }
+    
+    /* Separator styles */
+    .h-separator {
+        border: 1px solid;
+        margin: 20px 0;
+        height: 0px;
+        border-color: lightgray transparent transparent transparent;
+        padding: 0;
+    }
+    
+    .v-separator {
+        border: 1px solid;
+        margin: 0px 20px;
+        width: 0px;
+        border-color: transparent lightgray transparent transparent;
+        padding: 0;
+    }
+    
+    /* Heading styles */
+    h1,
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1 {
+        font-size: 1.7rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    /* List item hover style */
+    ul li:hover {
+        color: blue;
+    }
+    
+    /* Bottom menu styles */
+    .bottom-menu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .bottom-menu li a {
+        padding: 0 15px;
+        color: rgb(153, 153, 153);
+    }
+    
+    /* Logo styles */
+    .logo img {
+        transition: opacity 0.3s ease;
+    }
+    
+    .logo img:hover {
+        opacity: 0.7;
+    }
+    
+    /* Arrow styles */
+    .arrow {
+        border: solid brown;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    
+    /* Carton styles */
+    .carton h3:hover {
+        color: blue;
+    }
+    
+    .carton img {
+        transition: opacity 0.3s ease;
+    }
+    
+    .carton img:hover {
+        opacity: 0.7;
+    }
+    
+    /* Dot styles */
+    .dot {
+        height: 5px;
+        width: 5px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="context header ">
+        <div class="left-wrap">
+          <div class="top-icons">
+            <div class="hm-icon">
+              <div class="hm-bar"></div>
+              <div class="hm-bar"></div>
+              <div class="hm-bar"></div>
+            </div>
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                <path
+                  d="M8.269 2.469a5.764 5.764 0 014.1 1.7 5.764 5.764 0 011.7 4.1 5.78 5.78 0 01-.347 1.984 5.778 5.778 0 01-.962 1.688l-.383.467-.472.381a5.735 5.735 0 01-3.638 1.283 5.764 5.764 0 01-4.1-1.7 5.764 5.764 0 01-1.7-4.1 5.764 5.764 0 011.7-4.1 5.764 5.764 0 014.1-1.7m0-2.467A8.269 8.269 0 00.003 8.269a8.269 8.269 0 008.269 8.269 8.233 8.233 0 005.187-1.829 1.755 1.755 0 00.444 1.717l3.114 3.114a1.745 1.745 0 001.238.511 1.745 1.745 0 001.238-.511 1.756 1.756 0 000-2.476l-3.114-3.114a1.744 1.744 0 00-1.237-.51 1.771 1.771 0 00-.468.063 8.234 8.234 0 001.867-5.234A8.269 8.269 0 008.272 0z"
+                  data-name="Path 223" fill="#001246"></path>
+              </svg></div>
+          </div>
+          <div class="news-date" style="margin-bottom: 20px;">
+            বুধবার, ০১ মার্চ ২০২৩
+          </div>
+        </div>
+        <div>
+          <img src="img/prothomalo_logo.PNG" />
+        </div>
+        <div class="right-wrap">
+          <div class="right-icon">
+            <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+                <path
+                  d="M 25 0 C 22.800781 0 21 1.800781 21 4 C 21 4.515625 21.101563 5.015625 21.28125 5.46875 C 15.65625 6.929688 12 11.816406 12 18 C 12 25.832031 10.078125 29.398438 8.25 31.40625 C 7.335938 32.410156 6.433594 33.019531 5.65625 33.59375 C 5.265625 33.878906 4.910156 34.164063 4.59375 34.53125 C 4.277344 34.898438 4 35.421875 4 36 C 4 37.375 4.84375 38.542969 6.03125 39.3125 C 7.21875 40.082031 8.777344 40.578125 10.65625 40.96875 C 13.09375 41.472656 16.101563 41.738281 19.40625 41.875 C 19.15625 42.539063 19 43.253906 19 44 C 19 47.300781 21.699219 50 25 50 C 28.300781 50 31 47.300781 31 44 C 31 43.25 30.847656 42.535156 30.59375 41.875 C 33.898438 41.738281 36.90625 41.472656 39.34375 40.96875 C 41.222656 40.578125 42.78125 40.082031 43.96875 39.3125 C 45.15625 38.542969 46 37.375 46 36 C 46 35.421875 45.722656 34.898438 45.40625 34.53125 C 45.089844 34.164063 44.734375 33.878906 44.34375 33.59375 C 43.566406 33.019531 42.664063 32.410156 41.75 31.40625 C 39.921875 29.398438 38 25.832031 38 18 C 38 11.820313 34.335938 6.9375 28.71875 5.46875 C 28.898438 5.015625 29 4.515625 29 4 C 29 1.800781 27.199219 0 25 0 Z M 25 2 C 26.117188 2 27 2.882813 27 4 C 27 5.117188 26.117188 6 25 6 C 23.882813 6 23 5.117188 23 4 C 23 2.882813 23.882813 2 25 2 Z M 27.34375 7.1875 C 32.675781 8.136719 36 12.257813 36 18 C 36 26.167969 38.078125 30.363281 40.25 32.75 C 41.335938 33.941406 42.433594 34.6875 43.15625 35.21875 C 43.515625 35.484375 43.785156 35.707031 43.90625 35.84375 C 44.027344 35.980469 44 35.96875 44 36 C 44 36.625 43.710938 37.082031 42.875 37.625 C 42.039063 38.167969 40.679688 38.671875 38.9375 39.03125 C 35.453125 39.753906 30.492188 40 25 40 C 19.507813 40 14.546875 39.753906 11.0625 39.03125 C 9.320313 38.671875 7.960938 38.167969 7.125 37.625 C 6.289063 37.082031 6 36.625 6 36 C 6 35.96875 5.972656 35.980469 6.09375 35.84375 C 6.214844 35.707031 6.484375 35.484375 6.84375 35.21875 C 7.566406 34.6875 8.664063 33.941406 9.75 32.75 C 11.921875 30.363281 14 26.167969 14 18 C 14 12.261719 17.328125 8.171875 22.65625 7.21875 C 23.320313 7.707031 24.121094 8 25 8 C 25.886719 8 26.679688 7.683594 27.34375 7.1875 Z M 21.5625 41.9375 C 22.683594 41.960938 23.824219 42 25 42 C 26.175781 42 27.316406 41.960938 28.4375 41.9375 C 28.792969 42.539063 29 43.25 29 44 C 29 46.222656 27.222656 48 25 48 C 22.777344 48 21 46.222656 21 44 C 21 43.242188 21.199219 42.539063 21.5625 41.9375 Z" />
+              </svg></div>
+            <div class="login">Login</div>
+          </div>
+          <div style="margin-bottom: 20px;"><b>English</b> Engish</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row border" style="position: sticky; top: 0; background-color: #fff;">
+      <div class="context">
+        <ul class="main-menu">
+          <li><a href="#">সর্বশেষ</a></li>
+          <li><a href="#">বিশেষ সংবাদ</a></li>
+          <li><a href="#">রাজনীতি</a></li>
+          <li><a href="#">করোনাভাইরাস</a></li>
+          <li><a href="#">বাংলাদেশ</a></li>
+          <li><a href="#">বিশ্ব</a></li>
+          <li><a href="#">বাণিজ্য</a></li>
+          <li><a href="#">খেলা</a></li>
+          <li><a href="#">বিনোদন</a></li>
+          <li><a href="#">চাকরি</a></li>
+          <li><a href="#">জীবনযাপন</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="" >
+      <div class="context border-bottom:1px;" style="margin-top: 20px;">
+
+        <div class="col31">        
+            <div class="row row1">               
+                <div class="col" style="width:67%">
+                   <div>
+                      <h1>রাজশাহী বিশ্ববিদ্যালয়ে সংঘর্ষে পুলিশ বক্সে আগুন, ক্লাস-পরীক্ষা বন্ধ ঘোষণা</h1>
+                      <div>
+                       সংঘর্ষের প্রায় চার ঘণ্টা পর শিক্ষার্থীদের সঙ্গে কথা বলতে আসেন বিশ্ববিদ্যালয়ের উপাচার্য গোলাম সাব্বির সাত্তার। এ সময় মাইকে তিনি
+                      </div>
+                   </div>                  
+                   <div style="margin-left: 20px;">
+                    <img src="img/news/31_1.webp" /> 
+                    <div>পুলিশ বক্সে আগুন দেন বিক্ষুব্ধ শিক্ষার্থীরা। শনিবার রাতে বিশ্ববিদ্যালয়ের বিনোদপুর ফটকেছবি: প্রথম আলো</div>
+                  </div>
+                </div>
+                <div class="v-separator"></div>
+                <div class="col" style="width:33%">
+                  <div>
+                    <h2>রাজধানীর তেজকুনিপাড়া বস্তিতে ভয়াবহ আগুন</h2>
+                    <p>
+                      ফায়ার সার্ভিসের নিয়ন্ত্রণ কক্ষ থেকে জানানো হয়েছে, এখন পর্যন্ত কোনো হতাহতের খবর পাওয়া যায়নি। ফায়ার সার্ভিসের ১১টি ইউনিট আগুন নেভানোর চেষ্টা করছে।
+  
+                    </p>
+  
+                    <span>১৩ মিনিট আগে</span>
+                  </div>               
+
+                </div>
+            </div>
+            <div class="h-separator"></div>
+            <div class="row">
+               <div class="col">
+                <h2>ইবির দুই শিক্ষার্থীকে মারধর, প্রতিবাদে আগুন জ্বালিয়ে মহাসড়ক অবরোধ</h2>
+                <p>
+                  বিকেল পাঁচটার দিকে কুষ্টিয়ার ইসলামী বিশ্ববিদ্যালয়ের (ইবি) দুই শিক্ষার্থী শেখপাড়া বাজার এলাকায় মোটরসাইকেলে তেল নিতে গেলে তাঁদের ওপর চড়াও হয় সেই বখাটেরা। চলন্ত মোটরসাইকেল থেকে ফেলে এলোপাতাড়ি মারধর করে। ...
+                </p>
+                 <span>২১ মিনিট আগে</span>
+               </div>
+               <div class="v-separator"></div>
+               <div class="col">
+                <h2>বান্দরবানে কেএনএর হামলায় এক সেনাসদস্য নিহত, আহত ২ সদস্য: আইএসপিআর</h2>
+                <p>
+                  কুকি-চিন ন্যাশনাল আর্মি নামের সশস্ত্র সন্ত্রাসী দলটি ‘জামাতুল আনসার ফিল হিন্দাল শারক্বিয়া’র মতো একটি জঙ্গিগোষ্ঠীকেও অর্থের বিনিময়ে অস্ত্র প্রশিক্ষণ দিয়েছে।
+                </p>
+                  <span>২ ঘণ্টা আগে</span>
+               </div>
+               <div class="v-separator"></div>
+               <div class="col">
+                <h2>মতামত চীন কোন জাদুতে চিরশত্রু সৌদি-ইরানের হাত মিলিয়ে দিল</h2>
+                <p>
+                  ইসরায়েলের কিছু বিশ্লেষক ইরান-সৌদি চুক্তির বিষয়ে সতর্কতার সঙ্গে আশাবাদ প্রকাশ করেছেন। জেরুজালেম পোস্ট পত্রিকায় ১১ মার্চ সেথ ফ্রানৎসমান লিখেছেন, ‘তুরস্ক সৌদি আরবের পদাঙ্ক অনুসরণ করছে। ইসরায়েল ও ...
+                </p>
+                
+                <span>২ ঘণ্টা আগে</span>
+               </div>
+
+            </div>
+        </div>
+        <div class="v-separator"></div>
+        <div class="col32">
+          <div class="row box-history h-center" style="background-color: #f2f2f2;">
+            <img src="img/news/32_0.png" width="100%" />
+          </div>
+          <div class="h-separator"></div>
+          <div class="row box-history">
+            <div>
+              <img src="img/news/32_1.webp" width="100%">
+            </div>
+            <h3>
+              <a href="#">রাজশাহী বিশ্ববিদ্যালয়ে শিক্ষার্থী-ব্যবসায়ী সংঘর্ষ</a>
+            </h3>
+          </div>
+          <div class="h-separator"></div>
+          <div class="row box-history">
+            <img class="rf" style="margin-left: 13px;" src="img/news/32_2.webp" />
+            <div style="text-align:justify;font-size:1.2rem;">দুবাইয়ে চালু হচ্ছে নতুন সোনার দোকান, যাচ্ছেন সাকিব আল
+              হাসানসহ অনেক দেশের ক্রিকেটার</div>
+          </div>
+          <div class="h-separator"></div>
+          <div class="row box-history" style="padding: 12px; background-color: skyblue;">
+            <img class="rf" style="margin-left: 13px;" src="img/news/32_3.webp" />
+            <div style="font-size:1.2rem;">ছাপা কাগজের মতো পড়ুন আজকের পত্রিকা</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="row" style="margin-top:5px;">
+      <div class="context">
+          <div>
+              <div class="row">
+                  <img src="img/news/41_1.webp" />
+              </div>
+              <div class="row" >
+                  <div class="context" style="flex-direction: row; background-color: #fbe9e7;padding:20px 20px 0 20px">
+                      <div class="col" style="width:calc(25% - 30px)">
+                          <img src="img/news/41_2.webp" width="100%" />
+                          <h2>সিদ্দিকবাজারে বিস্ফোরণে ক্ষতিগ্রস্ত ভবন ব্যবহার উপযোগী করতে ৫ সুপারিশ</h2>
+                          <p>
+                              রাজধানীর সিদ্দিকবাজারে ক্ষতিগ্রস্ত ভবনটি আর ব্যবহার করা যাবে কি না, জানতে মেজর (অব.)
+                              সামসুদ্দীন আহমদ চৌধুরীকে আহ্বায়ক ও রাজউকের ওই এলাকার দায়িত্বপ্রাপ্ত অথরাইজড অফিসার
+                              রংগন মণ্ডলকে সদস্যসচিব করে ছয় ...
+
+                          </p>
+
+                          <span>৩ ঘণ্টা আগে</span>
+                      </div>
+                        <div class="v-separator"></div>
+                      <div class="col" style="width:calc(25% - 30px)">
+                          <img src="img/news/42_1.webp" width="100%" />
+                          <h2>ঝুঁকিপূর্ণ ভবন ভবন ধসে পড়ে, হেলে পড়ে, নড়চড় নেই রাজউকের</h2>
+                          <p>
+                              দেশে ভবন হেলে পড়া কিংবা ধসের ঘটনার হিসাব সরকারি কোনো সংস্থার কাছে নেই। গণমাধ্যমে
+                              প্রকাশিত সংবাদ বিশ্লেষণ করে ২০১০ থেকে ২০২২ সাল পর্যন্ত ঢাকায় অন্তত ১৪টি ভবন হেলে পড়া
+                              ও ধসের ঘটনার তথ্য পাওয়া যায়।
+
+                          </p>
+                          <span>১২ ঘণ্টা আগে</span>
+                      </div>
+                      <div class="v-separator"></div>
+                      <div class="col" style="width:calc(25% - 30px)">
+                          <img src="img/news/43_1.webp" width="100%" />
+                          <h2>সম্রাটের মৃত্যুসনদ পেতে হাসপাতালে ঘুরছেন স্ত্রী</h2>
+                          <p>সম্রাটের স্ত্রী বলেন, জেলা প্রশাসকের দপ্তরে অনুদানের জন্য যোগাযোগ করেছেন। কিন্তু
+                              সেখান থেকে জানিয়ে দিয়েছে, মৃত্যুসনদ ছাড়া কিছুই করা যাবে না। তাই হাসপাতালে এসেছেন।
+                              তিনি বলেন, ঘটনার দিন হাসপাতাল থেকে ...
+                          </p>
+                          <span>২১ ঘণ্টা আগে</span>
+                      </div>
+                      <div class="v-separator"></div>
+                      <div class="col" style="width:calc(25% - 30px)">
+                          <img src="img/news/44_1.webp" width="100%" />
+                          <h2>কত দিন পর ছেলে আমার ফোন দিছে</h2>
+                          ছেলে দুর্ঘটনার শিকার হওয়ার পর প্রথমবারের মতো মুঠোফোনে কথা বলায় আনন্দে কেঁদে ফেলেন মা
+                          সেলিনা বেগম। পোস্ট অপারেটিভ সেন্টারের বাইরে অপেক্ষায় থাকা সেলিনা বলছিলেন, ‘ছেলে বাবার
+                          কাছে ফোন দিছে। কত দিন পর ...
+
+                          ২৩ ঘণ্টা আগে
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="row" >
+      <div class="context" style="margin-top: 20px;background-color:rgb(241, 241, 241);">
+
+        <div class="row border2"> 
+           <div class="row" style="color:black; padding-left: 15px;"  > 
+              <h3>একটু থামুন <i class="arrow right"></i></h3>
+            </div>
+            <div class="row" >
+              <div class="context" style="flex-direction: row;" >
+                  <div class="row" >
+                      <div class="context carton" style="flex-direction: row;padding:15px;">
+                          <div class="col" style="width:calc(25% - 30px)">
+                              <img src="img/news/c1.webp" width="100%" /><br/><br/>
+                              <h3>এই ছবির কজনকে আপনি চেনেন</h3>
+                              <p>
+                                নব্বইয়ের দশকের জনপ্রিয় তারকা, লেখক, গায়ক, কার্টুন চরিত্রসহ নানা কিছু তুলে ধরেছেন অপু
+                              </p>
+                              <span>১১ ঘণ্টা আগে</span>
+                          </div>
+                            <div class="v-separator"></div>
+                          <div class="col" style="width:calc(25% - 30px)">
+                              <img src="img/news/carton4.webp" width="100%" /><br/><br/>
+                              <h3>
+                                <span style="color:red;">বাসার ভাই ১৩২৬</span>&nbsp;<span class="dot"></span>&nbsp;‘একটা হোটেলে একজন খুন হয়েছে’</h3>
+                              <p>
+                                মজার ব্যাপার হলো, পুলিশ যে অন্ধকারে, এটা বোঝানোর জন্য পুরো স্ক্রিন ডার্ক করে রাখে সিরিজে। সংলাপ আছে, কিন্তু কিছু দেখা যায় না। একেবারে ডার্ক স্ক্রিন।
+                              </p>
+                              <span>১৭ ঘণ্টা আগে</span>
+                          </div>
+                          <div class="v-separator"></div>
+                          <div class="col" style="width:calc(25% - 30px)">
+                              <img src="img/news/c3.webp" width="100%" /><br/><br/>
+                              <h3><span style="color:red;">রিপলি’স বিলিভ ইট অর নট!</span>&nbsp;<span class="dot"></span>&nbsp; যে পাখি অন্য পাখির রক্ত খায়</h3>
+                              <p>১৯৯৭ সালে গভীর সমুদ্রবিশেষজ্ঞরা একটা উচ্চমাত্রার শব্দ ধারণ করেছিলেন। সে সময় উৎস সম্পর্কে সুনির্দিষ্ট কিছু জানা না গেলেও ‘ব্লুপ’ নামের ওই শব্দের উৎস ছিল...
+                                
+                              </p>
+                              <span>১৭ ঘণ্টা আগে</span>
+                          </div>
+                          <div class="v-separator"></div>
+                          <div class="col" style="width:calc(25% - 30px)">
+                              <img src="img/news/c4.webp" width="100%" /><br/><br/>
+                              <h3><span style="color:red;">পিনাটস ৯৪৯</span> &nbsp;<span class="dot"></span>&nbsp;
+                                ‘কেন যে এসব বলতে যাই’</h3>
+                              <p>তোমরা যে কেন ওই সিমেন্টের ফুটপাতে খালি পায়ে রোলার স্কেটিং করতে যাও, কিছুতেই বুঝি না!
+                              </p>
+                              <span>১৭ ঘণ্টা আগে</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+        </div>
+      </div>
+    </div>
+    
+   </div>
+    <div class="row" >
+      <div class="context" style="margin-top: 20px;">
+
+        <div class="row">        
+            <div class="h-separator"></div>
+            <div class="row">
+                <img src="img/images.jpeg" alt="" style="width: 35px; display: inline-block; vertical-align:middle; margin-bottom: 5px;">
+                <h5 style="display: inline-block; vertical-align:middle;">PROTHOMALO.COM</h5>
+            </div>
+            <div class="row" >
+
+              <div class="context" style="flex-direction: row;">
+                  <div class="col" style="width:calc(17% - 30px)">
+                    
+                      <ul style="list-style: none;">
+                        <li>নাগরিক সংবাদ</li>&nbsp;
+                        <li>ইপেপার</li>
+                      </ul>
+                
+                  </div>
+                  
+                  <div class="col" style="width:calc(17% - 10px)">
+                    
+                      <ul style="list-style: none;">
+                        <li>কিশোর আলো</li>&nbsp;
+                        <li>প্রথমা</li>
+                      </ul>
+                    
+                  </div>
+                
+                  <div class="col" style="width:calc(17% - 10px)">
+                   
+                    <ul style="list-style: none;">
+                      <li>বিজ্ঞানচিন্তা</li>&nbsp;
+                      <li>মোবাইল ভ্যাস</li>
+                    </ul>
+                  </div>
+              
+                  <div class="col" style="width:calc(17% - 10px)">
+                    <ul style="list-style: none;">
+                      <li>প্রথম আলো ট্রাস্ট</li>
+                    </ul>
+                  </div>
+                  <div class="col" style="width:calc(17% - 10px)"> 
+                    <ul style="list-style: none;">
+                      <li>বন্ধুসভা</li>
+                    </ul>
+                </div>
+                <div class="col" style="width:calc(17% - 10px)">
+                  <ul style="list-style: none;">
+                    <li>চিরন্তন ১৯৭১</li>
+                  </ul> 
+                </div>
+              </div>
+            <div class="h-separator"></div>
+            <div class="row" >
+           
+              <div class="context" style="flex-direction: row;">
+                  <div class="col" style="width:calc(50% - 10px)">
+                     <span style="padding: 78px; font-size: 14px;">অনুসরণ করুন
+                    </span>
+                    <ul style="list-style-type: none; display: flex;margin-top: 0px; margin-left: -40px;" class="logo">
+                      <li><img src="img/faceBook.jpg" alt="" style="width: 40px;"></li>&nbsp;&nbsp;&nbsp;&nbsp;
+                     
+                      <li><img src="img/twitter2.png" alt="" style="width: 30px; margin-top: 5px;"></li>&nbsp;&nbsp;
+                      <li><img src="img/circleinst.avif" style="width: 60px;" alt=""></li>
+                    
+                      <li><img src="img/you.jpg" alt="" style="width: 50px;margin-top:-5px;"></li>&nbsp;&nbsp;&nbsp;
+                      <li><img src="img/newsGglole.com" alt="" style="width:40px;"></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="col carton" style="width:calc(50% - 10px); text-align: right; padding-right: 70px;">
+                    <span style="font-size: 14px;">মোবাইল অ্যাপস ডাউনলোড করুন</span><br>
+                    <img src="img/appprotom.png" alt="" style="width:100px;">
+                    <img src="img/appprotom.png" alt="" style="width:100px;">
+                  </div>
+                  
+              </div>
+            <div class="h-separator"></div>
+            <div class="context" style="flex-direction: row;">
+              <div class="col" style="width:calc(100% - 10px)">
+                <ul class="bottom-menu">
+                  <li><a href="#">প্রথম আলো</a></li>
+                  <li><a href="#">বিজ্ঞাপন</a></li>&nbsp;
+                  <li><a href="#">সার্কুলেশন</a></li>
+                  <li><a href="#">শর্তাবলি ও নীতিমালা</a></li>
+                  <li><a href="#">গোপনীয়তা নীতি</a></li>
+                  <li><a href="#">যোগাযোগ</a></li>
+                 
+                </ul>
+              </div>
+             
+            </div>
+            <div class="h-separator"></div>
+            <div class="col" style="width:calc(100% - 10px); text-align: center;  color:	rgb(153, 153, 153); height: 55px;">
+              <span>স্বত্ব © ১৯৯৮-২০২৪ প্রথম আলো সম্পাদক ও প্রকাশক: মতিউর রহমান</span>
+            </div>
+            
+        </div>
+      </div>
+    </div>
+
+
+   </div>
+
+  <script src="js/vendor/modernizr-3.12.0.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
